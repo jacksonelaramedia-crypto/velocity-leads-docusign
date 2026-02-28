@@ -41,7 +41,6 @@ async function getAccessToken(integrationKey, userId, privateKey, isProduction) 
 async function sendEnvelope(accessToken, accountId, baseUri, opts) {
   const envelopeBody = {
     emailSubject: 'Velocity Leads Service Agreement - ' + opts.clientName,
-    emailBlurb: opts.clientName + ',\n\n\nComplete with DocuSign: ' + (opts.fileName || 'Service Agreement').replace('.docx', '') + '\n\n\nThank You, Jackson Stone',
     documents: [
       {
         documentBase64: opts.docBase64,
