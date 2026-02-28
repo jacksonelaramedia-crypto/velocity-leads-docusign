@@ -66,14 +66,6 @@ async function sendEnvelope(accessToken, accountId, baseUri, opts) {
                 anchorYOffset: '-5',
               },
             ],
-            dateSignedTabs: [
-              {
-                anchorString: 'Date:',
-                anchorUnits: 'pixels',
-                anchorXOffset: '50',
-                anchorYOffset: '-5',
-              },
-            ],
           },
         },
       ],
